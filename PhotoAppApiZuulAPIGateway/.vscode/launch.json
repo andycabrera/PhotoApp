@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PhotoAppApiZuulApiGatewayApplication<PhotoAppApiZuulAPIGateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.andycabrera.photoapp.api.gateway.PhotoAppApiZuulApiGatewayApplication",
+            "projectName": "PhotoAppApiZuulAPIGateway",
+            "args": ""
+        }
+    ]
+}
