@@ -1,6 +1,9 @@
 package com.andycabrera.photoapp.api.users.shared;
 
 import java.io.Serializable;
+import java.util.List;
+
+import com.andycabrera.photoapp.api.users.ui.models.AlbumResponseModel;
 
 public class UserDto implements Serializable {
 
@@ -11,6 +14,15 @@ public class UserDto implements Serializable {
     private String lastName;
     private String email;
     private String password;
+    private List<AlbumResponseModel> albums;
+
+    public List<AlbumResponseModel> getAlbums() {
+        return this.albums;
+    }
+
+    public void setAlbums(List<AlbumResponseModel> albums) {
+        this.albums = albums;
+    } 
 
     public String getUserId() {
         return this.userId;
