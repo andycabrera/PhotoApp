@@ -49,13 +49,12 @@ class AlbumServiceClientFallback implements AlbumsServiceCliente{
 
         if (cause instanceof FeignException && ((FeignException) cause).status() == 404) {
 			logger.error("404 error took place when getAlbums was called with userId: " + id + ". Error message: "
-					+ cause.getLocalizedMessage());
+                + cause.getLocalizedMessage());
 		} else {
 			logger.error("Other error took place: " + cause.getLocalizedMessage());
 		}
 
         return new ArrayList<>();
     }
-    
 }
 

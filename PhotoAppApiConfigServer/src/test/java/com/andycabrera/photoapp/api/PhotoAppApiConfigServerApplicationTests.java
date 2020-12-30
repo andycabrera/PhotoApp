@@ -1,13 +1,13 @@
-package com.andycabrera.photoapp.api;
+// package com.andycabrera.photoapp.api;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class PhotoAppApiConfigServerApplicationTests {
+// @SpringBootTest
+// class PhotoAppApiConfigServerApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }
