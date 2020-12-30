@@ -12,6 +12,8 @@ import com.andycabrera.photoapp.api.users.ui.models.AlbumResponseModel;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.env.Environment;
@@ -32,6 +34,8 @@ public class UserServiceImpl implements UserService {
     // RestTemplate restTemplate;
     Environment environment;
     AlbumsServiceCliente albumServiceCliente;
+
+    Logger logger =  LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     public UserServiceImpl(UsersRepository usersRepository, BCryptPasswordEncoder bCryptPasswordEncoder, 
